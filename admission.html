@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Admission</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <h1>Admission Form</h1>
+  <form action="process_admission.php" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="grade">Grade Applying For:</label>
+    <select id="grade" name="grade" required>
+      <option value="grade1">Class 1-4</option>
+      <option value="grade2">Class 5-8</option>
+      <option value="grade3">Class 9-10</option>
+      <!-- Add more grade options as needed -->
+    </select><br>
+
+    <label for="parents">Parent/Guardian Name:</label>
+    <input type="text" id="parents" name="parents" required><br>
+
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" name="contact" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" required></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
